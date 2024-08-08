@@ -1,0 +1,10 @@
+def fibonacci_triangle(n):
+  a = 0
+  b = 1
+  for i in range(n):
+    for j in range(i + 1):
+      print(a, end=" ")
+      a, b = b, a + b
+    print()
+num_rows = int(input("Enter the number of rows for the Fibonacci triangle: "))
+fibonacci_triangle(num_rows)
